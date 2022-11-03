@@ -5,10 +5,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
+    "cosmicjs": "^3.3.1",
+    "v-google-translate": "^1.0.0",
     "vue": "^3.2.25",
+    "vue-i18n": "^8.27.2",
     "vue3-smooth-scroll": "^0.8.1"
   },
   "devDependencies": {
