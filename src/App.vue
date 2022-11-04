@@ -4,7 +4,7 @@
     <nav class="container px-6 mx-auto md:flex md:justify-between md:items-center">
       <div class="flex items-center justify-between">
         <div class="relative w-16 h-16">
-          <img class="rounded-full border border-gray-100 shadow-sm" :src="'/images/nrd.jpg'" alt="user image" />
+          <img class="rounded-full border border-gray-100 shadow-sm" :src="'./images/nrd.jpg'" alt="user image" />
         </div>
         <!-- Mobile menu button -->
         <div @click="showMenu = !showMenu" class="flex md:hidden">
