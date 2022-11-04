@@ -4,7 +4,7 @@
     <nav class="container px-6 mx-auto md:flex md:justify-between md:items-center">
       <div class="flex items-center justify-between">
         <div class="relative w-16 h-16">
-          <img class="rounded-full border border-gray-100 shadow-sm" :src="'./src/assets/nrd.jpg'" alt="user image" />
+          <img class="rounded-full border border-gray-100 shadow-sm" :src="'/images/nrd.jpg'" alt="user image" />
         </div>
         <!-- Mobile menu button -->
         <div @click="showMenu = !showMenu" class="flex md:hidden">
@@ -57,7 +57,7 @@
 
       <div class="w-8/12 flex justify-end">
         <img class="3xl:h-[800px] 2xl:h-[650px] xl:h-[550px] lg:h-[550px] md:h-[450px] sm:h-[350px]"
-          :src="'./src/assets/profile.png'" alt="user image" />
+          :src="'images/profile.png'" alt="user image" />
       </div>
     </div>
   </div>
@@ -74,7 +74,7 @@
         <h3 class="text-xl font-semibold">I Made It With </h3>
         <ul class="flex">
 
-          <li v-for="tech in post.techs" :key="tech"><img :src="'./src/assets/icons/' + getTechIcon(tech).tech"
+          <li v-for="tech in post.techs" :key="tech"><img :src="'./images/icons/' + getTechIcon(tech).tech"
               style="width:45px" :title="getTechIcon(tech).name" /></li>
         </ul>
         <button class="text-sky-800 font-bold text-2xl tracking-wider">
@@ -82,7 +82,7 @@
         </button>
       </div>
       <div class="card-image bg-green-100">
-        <img class="object-cover w-full h-72 md:h-96" :src="'./src/assets/projects/' + post.image" />
+        <img class="object-cover w-full h-72 md:h-96" :src="'./images/projects/' + post.image" />
       </div>
     </div>
 
@@ -166,7 +166,7 @@
   </div>
 
   <div class="banner-2 md:flex items-center md:justify-evenly" id="about">
-    <img class="md:h-[500px] h-[400px]" :src="'./src/assets/about-nrd.png'" alt="user image" />
+    <img class="md:h-[500px] h-[400px]" :src="'./images/about-nrd.png'" alt="user image" />
     <div class="space-y-5 py-8 px-8 md:py-16 md:px-20 md:w-1/2">
       <h4 class="project-title item">Sheepify States</h4>
       <p class="font-work_sans">{{ findSlug('description').metadata.pres_first }}</p>
@@ -175,36 +175,36 @@
       <div class="container mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div class="flex justify-center text-6xl rounded-xl p-6">
-            <img :src="'./src/assets/icons/' + getTechIcon('javascript').tech"
+            <img :src="'./images/icons/' + getTechIcon('javascript').tech"
               style="width:50px" :title="getTechIcon('javascript').name" />
           </div>
           <div class="flex justify-center text-6xl rounded-xl p-6">
-            <img :src="'./src/assets/icons/' + getTechIcon('vuejs').tech"
+            <img :src="'./images/icons/' + getTechIcon('vuejs').tech"
               style="width:50px" :title="getTechIcon('vuejs').name" />
           </div>
           <div class="flex justify-center text-6xl rounded-xl p-6">
-            <img :src="'./src/assets/icons/' + getTechIcon('css').tech"
+            <img :src="'./images/icons/' + getTechIcon('css').tech"
               style="width:50px" :title="getTechIcon('css').name" />
           </div>
           <div class="flex justify-center text-6xl rounded-xl p-6">
-            <img :src="'./src/assets/icons/' + getTechIcon('bootstrap').tech"
+            <img :src="'./images/icons/' + getTechIcon('bootstrap').tech"
               style="width:50px" :title="getTechIcon('bootstrap').name" />
           </div>
 
           <div class="flex justify-center text-6xl rounded-xl p-6">
-            <img :src="'./src/assets/icons/' + getTechIcon('php').tech"
+            <img :src="'./images/icons/' + getTechIcon('php').tech"
               style="width:50px" :title="getTechIcon('php').name" />
           </div>
           <div class="flex justify-center text-6xl rounded-xl p-6">
-            <img :src="'./src/assets/icons/' + getTechIcon('laravel').tech"
+            <img :src="'./images/icons/' + getTechIcon('laravel').tech"
               style="width:50px" :title="getTechIcon('laravel').name" />
           </div>
           <div class="flex justify-center text-6xl rounded-xl p-6">
-            <img :src="'./src/assets/icons/' + getTechIcon('html').tech"
+            <img :src="'./images/icons/' + getTechIcon('html').tech"
               style="width:50px" :title="getTechIcon('html').name" />
           </div>
           <div class="flex justify-center text-6xl rounded-xl p-6">
-            <img :src="'./src/assets/icons/' + getTechIcon('wordpress').tech"
+            <img :src="'./images/icons/' + getTechIcon('wordpress').tech"
               style="width:50px" :title="getTechIcon('wordpress').name" />
           </div>
         </div>
